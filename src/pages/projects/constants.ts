@@ -22,28 +22,37 @@ export const TryVTile = styled(Tile)`
     padding-left: 300px;
 `;
 
+export const SpaceContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    margin: 25%;
+    justify-content: space-around;
+    align-items: space-around;
+`;
+
 export const SectionContainer = styled.div`
     display: flex;
     flex-direction: column;
 `;
 
 export const ImageContainer = styled(SectionContainer)`
-    justify-content: flex-start;
-    align-items: flex-end;
+    justify-content: space-around;
+    align-items: center;
     width: 200px;
     padding-left: 10%;
 `;
 
 export const StyledImage = styled.img`
     margin-bottom: 25px;
+    transition: transform .2s ease-in-out;
 
     &: hover {
-        animation: transform 2s ease-in-out;
-        transform: scale(2, 2)
+        transform: scale(3, 3);
     }
 `;
 
 export const Section = styled(TextSection)`
+    margin-bottom: 100px;
 `;
 
 export const Title = styled(TextComponent)`

@@ -1,7 +1,7 @@
 import React from 'react';
 import { DESC } from './constants';
 import { TITLES } from '../../../assets/titles';
-import { SectionContainer, Title, Section, ImageContainer, StyledImage } from '../constants';
+import { SectionContainer, Title, Section, ImageContainer, StyledImage, SpaceContainer } from '../constants';
 import { PageContainer } from '../../constants';
 import Brand from '../../../images/aneue/aneuetitle.png';
 import Colors from '../../../images/aneue/aneuecolors.png';
@@ -17,24 +17,27 @@ class AneuePage extends React.Component {
         return (
             <>
                 <PageContainer>
+
                     <Title text={'aneue'} type={'title'} size={'large'} bold />
-                    <SectionContainer>
-                        <Section title={TITLES.SUMMARY} description={DESC.SUMMARY} />
-                        <Section title={TITLES.BRAND} description={DESC.BRAND} />
-                        <Section title={TITLES.PRODUCT} description={DESC.PRODUCT} />
-                        <Section title={TITLES.LOGO} description={DESC.LOGO} />
-                        <Section title={TITLES.COLOR} description={DESC.COLOR} />
-                    </SectionContainer>
-                    <ImageContainer>
-                        <StyledImage src={Brand} alt={Brand} height={80} />
-                        <StyledImage src={Colors} alt={Colors} height={90} />
-                        <StyledImage src={Gradient} alt={Gradient} height={100} width={100} />
-                        <StyledImage src={Bottle} alt={Bottle} height={150} />
-                        <StyledImage src={Box} alt={Box} height={200} />
-                        <StyledImage src={HomeScreens} alt={HomeScreens} height={200} />
-                        <StyledImage src={SignupScreens} alt={SignupScreens} height={125} />
-                        <StyledImage src={AppAndSocials} alt={AppAndSocials} height={200} />
-                    </ImageContainer>
+                    <SpaceContainer>
+                        <SectionContainer>
+                            <Section title={TITLES.SUMMARY} description={DESC.SUMMARY} />
+                            <Section title={TITLES.BRAND} description={DESC.BRAND} />
+                            <Section title={TITLES.PRODUCT} description={DESC.PRODUCT} />
+                            <Section title={TITLES.LOGO} description={DESC.LOGO} />
+                            <Section title={TITLES.COLOR} description={DESC.COLOR} />
+                        </SectionContainer>
+                        <ImageContainer>
+                            <StyledImage src={Brand} alt={Brand} height={80} />
+                            <StyledImage src={Colors} alt={Colors} height={90} />
+                            <StyledImage src={Gradient} alt={Gradient} height={100} width={100} />
+                            <StyledImage src={Bottle} alt={Bottle} height={150} />
+                            <StyledImage src={Box} alt={Box} height={200} />
+                            <StyledImage src={HomeScreens} alt={HomeScreens} height={200} />
+                            <StyledImage src={SignupScreens} alt={SignupScreens} height={125} />
+                            <StyledImage src={AppAndSocials} alt={AppAndSocials} height={200} />
+                        </ImageContainer>
+                    </SpaceContainer>
                 </PageContainer>
             </>
         );

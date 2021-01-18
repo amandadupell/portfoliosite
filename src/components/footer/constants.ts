@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { $orange } from '../../assets/colors';
 
 export interface Props {
 };

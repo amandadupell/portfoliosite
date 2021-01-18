@@ -1,13 +1,6 @@
 import styled from 'styled-components';
 import { TextComponent } from '..';
 
-export interface Props {
-  tabs: string[];
-  selectedIndex: number;
-  color?: string;
-  onClick(): void;
-};
-
 export const StyledSideNav = styled.div`
     position: fixed;    
     height: 100%;

@@ -36,7 +36,7 @@ class SideNav extends React.Component<{}, { activePath: string, items: any[], su
                         },
                         {
                             title: 'try vegan',
-                            path: '/projects/grind'
+                            path: '/projects/tryvegan'
                         },
                     ],
                     key: 3

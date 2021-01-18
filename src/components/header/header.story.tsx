@@ -1,6 +1,4 @@
 import React from 'react';
-import { Props } from './constants';
-import { Story } from '@storybook/react';
 import Header from './header';
 
 export default {
@@ -13,16 +11,8 @@ export default {
     },
 };
 
-const Template: Story<Props> = args => <Header {...args} />;
+const Template = args => <Header {...args} />;
 
 const HEADER_STORY_ARGS = {
-    tabs: ['home', 'about', 'projects'],
-    selectedIndex: 0,
-    onClick: () => { }
-};
-
-export const HeaderStoryTemplate = Template.bind({});
-HeaderStoryTemplate.args = {
-    ...HEADER_STORY_ARGS
 };
 

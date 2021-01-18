@@ -2,11 +2,11 @@ import React from 'react';
 import { AneueTile, FregieTile, GrindTile, TryVTile, DESC, SKILLS } from './constants';
 import Aneue from '../../images/aneue/aneue.png';
 import AneueBox from '../../images/aneue/aneuegradient.png';
-import Fregie from '../../images/fregie.png';
-import FregieBox from '../../images/fregiegradient.png';
-import Grind from '../../images/thegrind.png';
-import GrindBox from '../../images/green.png';
-import TryV from '../../images/try.png';
+import Fregie from '../../images/fregie/fregie.png';
+import FregieBox from '../../images/fregie/fregiegradient.png';
+import Grind from '../../images/thegrind/thegrind.png';
+import GrindBox from '../../images/thegrind/green.png';
+import TryV from '../../images/tryv/try.png';
 import TryVBox from '../../images/tan.png';
 import { PageContainer } from '../constants';
 

@@ -17,7 +17,6 @@ class AneuePage extends React.Component {
         return (
             <>
                 <PageContainer>
-
                     <Title text={'aneue'} type={'title'} size={'large'} bold />
                     <SpaceContainer>
                         <SectionContainer>

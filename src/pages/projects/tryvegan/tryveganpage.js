@@ -9,7 +9,6 @@ import Fruits from '../../../images/tryv/tryvfruits.png';
 import Phone1 from '../../../images/tryv/tryvphone1.png';
 import Phone2 from '../../../images/tryv/tryvphone2.png';
 import Recipe1 from '../../../images/tryv/tryvrecipe1.png';
-import Recipe2 from '../../../images/tryv/tryvrecipe2.png';
 import Bag from '../../../images/tryv/tryvbag.png';
 
 class TryVeganPage extends React.Component {
@@ -32,7 +31,7 @@ class TryVeganPage extends React.Component {
                             <StyledImage src={Phone1} alt={Phone1} height={200} />
                             <StyledImage src={Phone2} alt={Phone2} height={200} />
                             <StyledImage src={Recipe1} alt={Recipe1} height={200} />
-                            <StyledImage src={Recipe2} alt={Recipe2} height={200} />
+                            <StyledImage src={Bag} alt={Bag} height={200} />
                         </ImageContainer>
                     </SpaceContainer>
                 </PageContainer>

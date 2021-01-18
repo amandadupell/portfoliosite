@@ -15,7 +15,7 @@ class NavItem extends React.Component {
         return (
             <StyledNavItem active={active}>
                 <Link to={this.props.path} className={this.props.css} onClick={this.handleClick}>
-                    <TextComponent text={this.props.name} type={'header'} size={'large'} color={active ? $orange : undefined} />
+                    <TextComponent bold={active} text={this.props.name} type={'header'} size={'large'} />
                 </Link>
             </StyledNavItem>
         );

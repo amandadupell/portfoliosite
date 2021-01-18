@@ -3,23 +3,23 @@ import { Tile } from '../../components';
 
 export const AneueTile = styled(Tile)`
     padding-top: 100px;
-    right: 100px;
+    padding-right: 200px;
 `;
 
 export const FregieTile = styled(Tile)`
-    padding-top: 125px;
-    left: 100px;
+    padding-top: 140px;
+    padding-left: 300px;
 `;
 
 export const GrindTile = styled(Tile)`
-    padding-top: 130px;
-    right: 80px;
+    padding-top: 125px;
+    padding-right: 200px;
 `;
 
 export const TryVTile = styled(Tile)`
-    padding-top: 100px;
+    padding-top: 140px;
     padding-bottom: 200px;
-    left: 125px;
+    padding-left: 400px;
 `;
 
 export const DESC = {

@@ -5,6 +5,7 @@ import { TYPE } from '../photoBox/constants';
 import { Arrow } from '../../assets/svgComponents';
 
 const Tile: FunctionComponent<Props> = ({
+    className,
     image1,
     image2,
     imgH,
@@ -18,7 +19,7 @@ const Tile: FunctionComponent<Props> = ({
     onClick
 }) => {
     return (
-        <Container>
+        <Container className={className}>
             <PhotoBox xOffset={xOffset} yOffset={yOffset} type={variant} image1={image1} image2={image2} imgH={imgH} imgW={imgW} />
             <TextContainer variant={variant}>
                 <Title text={title} type={'title'} size={variant === TYPE.ABOUT ? 'large' : variant === TYPE.PROJECT ? 'small' : null} variant={variant} bold />

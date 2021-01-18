@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { TextComponent } from '../../components';
 import { $orange, $black } from '../../assets/colors';
+import { StyledNavItem } from './constants';
 
 class NavItem extends React.Component {
     handleClick = () => {
@@ -14,9 +15,11 @@ class NavItem extends React.Component {
         return (
             <StyledNavItem active={active}>
                 <Link to={this.props.path} className={this.props.css} onClick={this.handleClick}>
-                    <TextComponent text={this.props.name} type={'header'} size={'large'} color={active ? $orange : $black} />
+                    <TextComponent text={this.props.name} type={'header'} size={'large'} color={active ? $orange : undefined} />
                 </Link>
             </StyledNavItem>
         );
     };
 };
+
+export default NavItem;

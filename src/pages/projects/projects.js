@@ -5,7 +5,7 @@ import AneueBox from '../../images/aneuegradient.png';
 import Fregie from '../../images/fregie.png';
 import FregieBox from '../../images/fregiegradient.png';
 import Grind from '../../images/thegrind.png';
-import GrindBox from '../../images/tan.png';
+import GrindBox from '../../images/green.png';
 import TryV from '../../images/try.png';
 import TryVBox from '../../images/tan.png';
 

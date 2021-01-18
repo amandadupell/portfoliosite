@@ -4,6 +4,7 @@ import TextComponent from '../textComponent';
 import { Arrow } from '../../assets/svgComponents';
 
 export interface Props {
+    className?: any;
     variant: string;
     title: string;
     description: string;
@@ -18,6 +19,7 @@ export interface Props {
 };
 
 interface StoryProps {
+    className?: any;
     variant?: string;
 };
 

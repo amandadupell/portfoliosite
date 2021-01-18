@@ -21,6 +21,7 @@ export interface Props {
 interface StoryProps {
     className?: any;
     variant?: string;
+    xOffset?: number;
 };
 
 export const Container = styled.div`
@@ -34,6 +35,7 @@ export const TextContainer = styled.div<StoryProps>`
     display: flex;
     flex-direction: column;
     height: 100%;
+    padding-top: ${({ xOffset }) => xOffset}px;
     width: ${({ variant }) => {
         return variant === TYPE.ABOUT ? 30 : variant === TYPE.PROJECT ? 24 : null;
     }}%;

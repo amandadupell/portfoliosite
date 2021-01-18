@@ -21,7 +21,7 @@ const Tile: FunctionComponent<Props> = ({
     return (
         <Container className={className}>
             <PhotoBox xOffset={xOffset} yOffset={yOffset} type={variant} image1={image1} image2={image2} imgH={imgH} imgW={imgW} />
-            <TextContainer variant={variant}>
+            <TextContainer variant={variant} xOffset={xOffset}>
                 <Title text={title} type={'title'} size={variant === TYPE.ABOUT ? 'large' : variant === TYPE.PROJECT ? 'small' : null} variant={variant} bold />
                 <DescriptionContainer>
                     <Description text={description} type={'body'} size={variant === TYPE.ABOUT ? 'large' : variant === TYPE.PROJECT ? 'medium' : null} />

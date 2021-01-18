@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { TYPE } from '../photoBox/constants';
 import TextComponent from '../textComponent';
+import { Arrow } from '../../assets/svgComponents';
 
 export interface Props {
     variant: string;
@@ -55,4 +56,8 @@ export const Description = styled(TextComponent)`
 
 export const Skills = styled(TextComponent)`
     padding-bottom: 20px;
+`;
+
+export const ArrowContainer = styled(Arrow)`
+    cursor: pointer;
 `;

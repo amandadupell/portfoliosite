@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import { Props, Container, TextContainer, Title, Description, Skills, DescriptionContainer } from './constants';
+import { Props, Container, TextContainer, Title, Description, Skills, DescriptionContainer, ArrowContainer } from './constants';
 import PhotoBox from '../photoBox';
 import { TYPE } from '../photoBox/constants';
 import { Arrow } from '../../assets/svgComponents';
@@ -29,7 +29,9 @@ const Tile: FunctionComponent<Props> = ({
                     variant === TYPE.PROJECT ?
                         <>
                             <Skills text={skills} type={'body'} size={'small'} />
-                            <Arrow onClick={() => onClick} />
+                            <ArrowContainer>
+                                <Arrow onClick={() => onClick} />
+                            </ArrowContainer>
                         </>
                         :
                         null

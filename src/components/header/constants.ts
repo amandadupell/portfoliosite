@@ -16,3 +16,13 @@ export const Container = styled.div`
     padding-top: 50px;
     padding-left: 50px;
 `;
+
+export const StyledSideNav = styled.div`
+    position: fixed;    
+    height: 100%;
+    width: 100px;    
+    z-index: 1;    
+    top: 1em;
+    overflow-x: hidden;
+    padding-top: 10px;
+`;

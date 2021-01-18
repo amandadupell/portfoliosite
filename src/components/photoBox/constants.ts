@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export interface Props {
     type: string;
-    image1?: any;
-    image2?: any;
+    image1: any;
+    image2: any;
     xOffset?: number;
     yOffset?: number;
     imgH: number;

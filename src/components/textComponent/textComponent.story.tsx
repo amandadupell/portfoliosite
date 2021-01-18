@@ -2,7 +2,6 @@ import React from 'react';
 import { Props, TYPE, SIZE } from './constants';
 import { Story } from '@storybook/react';
 import TextComponent from './textComponent';
-import { $black } from '../../assets/colors';
 
 export default {
     title: 'Atoms/Text',
@@ -22,8 +21,6 @@ const TEXT_STORY_ARGS = {
     text: 'Hello!',
     type: TYPE.TITLE,
     size: SIZE.LARGE,
-    color: $black,
-    bold: false
 };
 
 export const TextStoryTemplate = Template.bind({});

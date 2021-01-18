@@ -14,20 +14,22 @@ export const SIZE = {
 };
 
 export interface Props {
+    className?: any;
     text: string;
     type: string;
     size: string;
     color?: string;
     bold?: boolean;
-    onClick(): void;
+    onClick?: void;
 };
 
 interface StoryProps {
+    className?: any;
     type?: string,
     size?: string,
     bold?: boolean,
     color?: string,
-    onClick(): void
+    onClick?: void
 }
 
 export const StyledText = styled.div<StoryProps>`

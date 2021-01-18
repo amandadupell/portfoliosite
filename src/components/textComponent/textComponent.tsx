@@ -2,6 +2,7 @@ import React, { FunctionComponent } from 'react';
 import { Props, StyledText } from './constants';
 
 const TextComponent: FunctionComponent<Props> = ({
+    className,
     text,
     type,
     size,
@@ -9,8 +10,9 @@ const TextComponent: FunctionComponent<Props> = ({
     bold,
     onClick
 }) => {
-
-    return <StyledText type={type} size={size} color={color} bold={bold} onClick={onClick}>{text}</StyledText>;
+    return (
+        <StyledText className={className} type={type} size={size} color={color} bold={bold} onClick={onClick}>{text}</StyledText>
+    );
 };
 
 export default TextComponent;

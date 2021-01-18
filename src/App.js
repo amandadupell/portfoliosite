@@ -5,10 +5,12 @@ import About from "./pages/about/about";
 import Home from "./pages/home/home";
 import TryVeganPage from "./pages/projects/tryvegan/tryveganpage";
 import Header from "./components/header/sidebar";
+import ScrollToTop from "./assets/scrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Header />
       <Switch>
         <Route exact path="/" component={Home} />

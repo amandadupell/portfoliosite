@@ -1,7 +1,7 @@
 import React from 'react';
 import { AneueTile, FregieTile, GrindTile, TryVTile, DESC, SKILLS } from './constants';
-import Aneue from '../../images/aneue.png';
-import AneueBox from '../../images/aneuegradient.png';
+import Aneue from '../../images/aneue/aneue.png';
+import AneueBox from '../../images/aneue/aneuegradient.png';
 import Fregie from '../../images/fregie.png';
 import FregieBox from '../../images/fregiegradient.png';
 import Grind from '../../images/thegrind.png';

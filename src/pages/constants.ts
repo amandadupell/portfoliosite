@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
 export const PageContainer = styled.body`
+    display: flex;
+    flex-direction:  row;
+
+    margin: 25%;
     animation: fadeInAnimation ease-in-out 1s;
 
     @keyframes fadeInAnimation { 

@@ -48,11 +48,31 @@ export const ColorBox = styled.img<StoryProps>`
 
 export const StyledImage = styled.img<StoryProps>`
     position: absolute;
-    transition: top left 1s ease-in-out; 
+    transition: top left 2s ease-in-out; 
     top: ${({ xOffset }) => {
         return `${xOffset}px`;
     }};
     ${({ yOffset }) => {
         return yOffset ? `left: ${yOffset}px;` : null;
     }};
+    animation: move 2s ease-in-out;
+
+
+    @keyframes move {
+        from {
+            transform: translateY(${({ yOffset }) => { return `${yOffset}px`; }});
+        };
+        to {
+            transform: translateY(${({ yOffset }) => { return `${yOffset - 50}px`; }});
+        };
+    };
+    
+    @-webkit-@keyframes move {
+        from {
+            transform: translateY(${({ yOffset }) => { return `${yOffset}px`; }});
+        };
+        to {
+            transform: translateY(${({ yOffset }) => { return `${yOffset - 50}px`; }});
+        };
+    };
 `;

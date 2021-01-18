@@ -23,11 +23,27 @@ export const TryVTile = styled(Tile)`
 `;
 
 export const SectionContainer = styled.div`
-    margin: 25%;
+    display: flex;
+    flex-direction: column;
+`;
+
+export const ImageContainer = styled(SectionContainer)`
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 200px;
+    padding-left: 10%;
+`;
+
+export const StyledImage = styled.img`
+    margin-bottom: 25px;
+
+    &: hover {
+        animation: transform 2s ease-in-out;
+        transform: scale(2, 2)
+    }
 `;
 
 export const Section = styled(TextSection)`
-    padding-top: 100px;
 `;
 
 export const Title = styled(TextComponent)`

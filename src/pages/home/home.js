@@ -1,19 +1,18 @@
 import React from 'react';
-import { Container } from './constants';
+import { Container, StyledHowdy, StyledSmile, StyledCowboy } from './constants';
 import { PageContainer } from '../constants';
-
-import Smile from '../../assets/svgComponents/smile.svg';
-import Howdy from '../../assets/svgComponents/howdy.svg';
 
 class Home extends React.Component {
     render() {
         return (
-            <PageContainer>
-                <Container>
-                    <Smile />
-                    <Howdy />
-                </Container>
-            </PageContainer>
+            <>
+                <PageContainer>
+                    <Container>
+                        <StyledSmile height={500} width={500} />
+                        <StyledHowdy height={500} width={500} />
+                    </Container>
+                </PageContainer>
+            </>
         );
     }
 };

@@ -4,5 +4,7 @@ export const TITLES = {
     TYPOGRAPHY: 'typography',
     LANGUAGE: 'language',
     COLOR: 'color',
-    BRAND: 'branding'
+    BRAND: 'branding',
+    PRODUCT: 'product',
+    LOGO: 'logo',
 };

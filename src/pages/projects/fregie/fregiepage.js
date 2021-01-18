@@ -4,7 +4,6 @@ import { TITLES } from '../../../assets/titles';
 import { SectionContainer, Title, Section } from '../constants';
 import { PageContainer } from '../../constants';
 
-
 class FregiePage extends React.Component {
     render() {
         return (

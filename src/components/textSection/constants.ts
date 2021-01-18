@@ -14,6 +14,7 @@ export const Container = styled.div`
 `;
 
 export const Description = styled(TextComponent)`
+    white-space: pre-line;
     padding-top: 25px;
 `;
 

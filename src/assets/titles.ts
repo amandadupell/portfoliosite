@@ -7,4 +7,5 @@ export const TITLES = {
     BRAND: 'branding',
     PRODUCT: 'product',
     LOGO: 'logo',
+    PROTOTYPE: 'prototype'
 };

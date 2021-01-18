@@ -1,8 +1,12 @@
 import React from 'react';
 import { DESC } from './constants';
 import { TITLES } from '../../../assets/titles';
-import { SectionContainer, Title, Section, SpaceContainer, ImageContainer } from '../constants';
+import { SectionContainer, Title, Section, SpaceContainer, ImageContainer, StyledImage } from '../constants';
 import { PageContainer } from '../../constants';
+import Logo from '../../../images/fregie/fregielogo.png';
+import Characters from '../../../images/fregie/fregiecharacters.png';
+import FregieSocialMedia from '../../../images/fregie/fregiesocialmedia.png';
+import FregieGradient from '../../../images/fregie/fregiegradient.png';
 
 class FregiePage extends React.Component {
     render() {
@@ -13,13 +17,13 @@ class FregiePage extends React.Component {
                     <SpaceContainer>
                         <SectionContainer>
                             <Section title={TITLES.SUMMARY} description={DESC.SUMMARY} />
-                            <Section title={TITLES.PROCESS} description={DESC.PROCESS} />
-                            <Section title={TITLES.TYPOGRAPHY} description={DESC.TYPOGRAPHY} />
-                            <Section title={TITLES.LANGUAGE} description={DESC.LANGUAGE} />
-                            <Section title={TITLES.COLOR} description={DESC.COLOR} />
+                            <Section title={TITLES.PROTOTYPE} description={DESC.PROTOTYPE} />
                         </SectionContainer>
                         <ImageContainer>
-
+                            <StyledImage src={Logo} alt={Logo} height={66} />
+                            <StyledImage src={Characters} alt={Characters} height={135} />
+                            <StyledImage src={FregieSocialMedia} alt={FregieSocialMedia} height={146} />
+                            <StyledImage src={FregieGradient} alt={FregieGradient} height={200} />
                         </ImageContainer>
                     </SpaceContainer>
                 </PageContainer>

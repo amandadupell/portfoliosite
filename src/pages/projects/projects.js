@@ -4,10 +4,10 @@ import Aneue from '../../images/aneue/aneue.png';
 import AneueBox from '../../images/aneue/aneuegradient.png';
 import Fregie from '../../images/fregie/fregie.png';
 import FregieBox from '../../images/fregie/fregiegradient.png';
-import Grind from '../../images/thegrind/thegrind.png';
+import Grind from '../../images/thegrind/grindmainlogo.png';
 import GrindBox from '../../images/thegrind/green.png';
 import TryV from '../../images/tryv/try.png';
-import TryVBox from '../../images/tan.png';
+import TryVBox from '../../images/tryv/tan.png';
 import { PageContainer } from '../constants';
 
 class Projects extends React.Component {

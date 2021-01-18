@@ -3,7 +3,6 @@ import { DESC } from './constants';
 import { TITLES } from '../../../assets/titles';
 import { SectionContainer, Title, Section, SpaceContainer, ImageContainer } from '../constants';
 import { PageContainer } from '../../constants';
-import FregieGradient from '../../../images/';
 
 class FregiePage extends React.Component {
     render() {

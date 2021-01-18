@@ -1,0 +1,9 @@
+import styled from 'styled-components';
+import { TextSection } from '../../../components';
+
+export const DESC = {
+    SUMMARY: 'Try Vegan was a social campaign that stretched across multiple medias in effort to encourage people to try and explore the benefits of a plant-based diet. To appeal to people who may not normally search for meat and dairy alternatives, I chose to center the campaign around beautiful photos of food that would draw attention to the ingredients. Working from 2D to 4D, I designed posters, billboards, recipe cards, grocery tote bags, and a mobile application to promote the campaign.',
+    PROCESS: 'When choosing a campaign, I wanted to have a personal connection with my subject matter. My entire process was documented in a process book that you can find at the end of this page.',
+    TYPOGRAPHY: 'The font, Royal Fighter, was a free font that I happened upon when searching for a typeface. Royal Fighter spoke to me because of its handmade quality. Because my campaign centered around encouraging people to cook vegan, I wanted a typeface that spoke to that with its authentic, home feel.',
+    LANGUAGE: 'Because this campaign is trying to convince people to explore a vegan diet, I knew that language would be important. Knowing how PETA and other organizations brand their campaigns, I knew I wanted mine to be light-hearted, informative, and positive. I avoided any slander against those who eat meat and instead, focused on the positives of switching even just one or two products with a plant-based source. I also kept away from any negative health statements.',
+};

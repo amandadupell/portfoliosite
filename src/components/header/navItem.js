@@ -9,10 +9,6 @@ class NavItem extends React.Component {
         onItemClick(path);
     };
 
-    onSubNavClick = () => {
-        this.setState({ subNav: !this.state.subNav })
-    };
-
     render() {
         const { active } = this.props;
 
@@ -25,9 +21,11 @@ class NavItem extends React.Component {
                     <SubMenu>
                         {
                             this.props.subNav && this.props.subNav.map((item) => {
+                                console.log(item.title);
+                                console.log(item.path);
                                 return (
                                     <Link to={item.path} className={item.css} onClick={this.handleClick}>
-                                        <SubItem bold={this.props.path === item.path} text={item.title} type={'header'} size={'large'} />
+                                        <SubItem text={item.title} type={'header'} size={'large'} />
                                     </Link>
                                 );
                             })

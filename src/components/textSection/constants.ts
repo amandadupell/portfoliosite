@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import TextComponent from '../textComponent';
 
 export interface Props {
+    className?: any,
     title: string;
     description: string;
 };
@@ -9,6 +10,7 @@ export interface Props {
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
+    width: 400px;
 `;
 
 export const Description = styled(TextComponent)`

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Tile } from '../../components';
+import { Tile, TextComponent, TextSection } from '../../components';
 
 export const AneueTile = styled(Tile)`
     padding-top: 100px;
@@ -20,6 +20,23 @@ export const TryVTile = styled(Tile)`
     padding-top: 140px;
     padding-bottom: 200px;
     padding-left: 400px;
+`;
+
+export const SectionContainer = styled.div`
+    margin: 25%;
+`;
+
+export const Section = styled(TextSection)`
+    padding-top: 100px;
+`;
+
+
+export const Title = styled(TextComponent)`
+    top: 0;
+    right: 0;
+    margin-right: 100px;
+    margin-top: 100px;
+    position: fixed;
 `;
 
 export const DESC = {

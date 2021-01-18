@@ -3,15 +3,18 @@ import { Header, Footer } from "./components";
 import Projects from "./pages/projects/projects";
 import About from "./pages/about/about";
 import Home from "./pages/home/home";
+import TryVeganPage from "./pages/projects/tryvegan/tryveganpage";
+import Sidebar from "./components/header/sidebar";
 
 function App() {
   return (
     <Router>
-      <Header />
+      <Sidebar />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/projects" component={Projects} />
+        <Route exact path="/about" component={About} />
+        <Route exact path="/projects" component={Projects} />
+        <Route exact path="/projects/tryvegan" component={TryVeganPage} />
       </Switch>
       <Footer />
     </Router>

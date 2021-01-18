@@ -3,7 +3,8 @@ import { Tile } from '../../components';
 import { TextComponent } from '../../components';
 
 export const AboutTile = styled(Tile)`
-    padding-top: 100px;
+    margin-top: 100px;
+    margin-left: 50px;
 `;
 
 export const Frank = styled(TextComponent)`

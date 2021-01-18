@@ -3,7 +3,7 @@ import { SidebarData } from './sidebarData';
 import SubMenu from './subMenu';
 import { SidebarNav } from './constants';
 
-const Sidebar = () => {
+const Header = () => {
     return (
         <>
             <SidebarNav>
@@ -15,4 +15,4 @@ const Sidebar = () => {
     );
 };
 
-export default Sidebar;
+export default Header;

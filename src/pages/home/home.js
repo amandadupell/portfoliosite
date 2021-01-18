@@ -1,10 +1,18 @@
 import React from 'react';
-import { Container } from './constants';
+import { Container, StyledHowdy, StyledSmile, StyledCowboy } from './constants';
+import { PageContainer } from '../constants';
 
 class Home extends React.Component {
     render() {
         return (
-            <Container></Container>
+            <>
+                <PageContainer>
+                    <Container>
+                        <StyledSmile height={500} width={500} />
+                        <StyledHowdy height={500} width={500} />
+                    </Container>
+                </PageContainer>
+            </>
         );
     }
 };

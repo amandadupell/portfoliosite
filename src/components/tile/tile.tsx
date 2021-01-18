@@ -16,7 +16,6 @@ const Tile: FunctionComponent<Props> = ({
     title,
     description,
     skills,
-    onClick
 }) => {
     return (
         <Container className={className}>
@@ -30,8 +29,8 @@ const Tile: FunctionComponent<Props> = ({
                     variant === TYPE.PROJECT ?
                         <>
                             <Skills text={skills} type={'body'} size={'small'} />
-                            <ArrowContainer>
-                                <Arrow onClick={() => onClick} />
+                            <ArrowContainer to={`projects/${title.replace(/\s+/g, '').toLocaleLowerCase()}`}>
+                                <Arrow />
                             </ArrowContainer>
                         </>
                         :

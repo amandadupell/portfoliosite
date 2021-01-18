@@ -19,7 +19,7 @@ export const GrindTile = styled(Tile)`
 export const TryVTile = styled(Tile)`
     padding-top: 140px;
     padding-bottom: 200px;
-    padding-left: 400px;
+    padding-left: 300px;
 `;
 
 export const SectionContainer = styled.div`

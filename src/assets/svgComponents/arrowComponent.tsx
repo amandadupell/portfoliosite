@@ -3,7 +3,7 @@ import React from 'react';
 interface Props {
     height?: number;
     width?: number;
-    onClick(): void;
+    onClick?: () => void;
 };
 
 class Arrow extends React.Component<Props> {

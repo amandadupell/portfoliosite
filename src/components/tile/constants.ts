@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { TYPE } from '../photoBox/constants';
 import TextComponent from '../textComponent';
-import { Arrow } from '../../assets/svgComponents';
+import { Link } from 'react-router-dom';
 
 export interface Props {
     className?: any;
@@ -64,6 +64,6 @@ export const Skills = styled(TextComponent)`
     padding-bottom: 20px;
 `;
 
-export const ArrowContainer = styled(Arrow)`
+export const ArrowContainer = styled(Link)`
     cursor: pointer;
 `;

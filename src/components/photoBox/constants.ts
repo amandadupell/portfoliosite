@@ -6,6 +6,8 @@ export interface Props {
     image2?: any;
     xOffset?: number;
     yOffset?: number;
+    imgH: number;
+    imgW: number;
 };
 
 interface StoryProps {
@@ -44,9 +46,6 @@ export const ColorBox = styled.img<StoryProps>`
 
 export const StyledImage = styled.img<StoryProps>`
     position: absolute;
-    ${({ type }) => {
-        return getSize(type);
-    }};
     top: ${({ xOffset }) => {
         return `${xOffset}px`;
     }};

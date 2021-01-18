@@ -1,9 +1,8 @@
 import React from 'react';
-import { Props, TYPE } from './constants';
-import { Story } from '@storybook/react';
+import { TYPE } from './constants';
 import PhotoBox from './photoBox';
-import AneueGrad from '../../assets/photos/aneuegradient.png';
-import Aneue from '../../assets/photos/aneue.png';
+import AneueGrad from '../../images/aneuegradient.png';
+import Aneue from '../../images/aneue.png';
 
 export default {
     title: 'Molecules/Photo Box',
@@ -15,11 +14,13 @@ export default {
     },
 };
 
-const Template: Story<Props> = args => <PhotoBox {...args} />;
+const Template = args => <PhotoBox {...args} />;
 
 const PHOTOBOX_STORY_ARGS = {
-    image1: <Aneue />,
-    image2: <AneueGrad />,
+    image1: Aneue,
+    image2: AneueGrad,
+    imgH: 313,
+    imgW: 300,
     xOffset: 10,
     yOffset: 10,
     type: 'about'

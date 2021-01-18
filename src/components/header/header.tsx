@@ -1,33 +1,56 @@
-import React, { Component } from 'react';
-import { Props, Container } from './constants';
-import TextComponent from '../textComponent';
+import React from 'react';
+import { StyledSideNav } from './constants';
+import NavItem from './navItem';
 
-interface State {
-    selectedIndex: number;
-};
-
-class Header extends Component<Props, State> {
-    constructor(props: Props) {
+class SideNav extends React.Component<{}, { activePath: string, items: any[] }> {
+    constructor(props) {
         super(props);
         this.state = {
-            selectedIndex: 0
+            activePath: '/',
+            items: [
+                {
+                    path: '/',
+                    name: 'home',
+                    key: 1
+                },
+                {
+                    path: '/about',
+                    name: 'about',
+                    key: 2
+                },
+                {
+                    path: '/projects',
+                    name: 'projects',
+                    key: 3
+                },
+            ]
         };
     };
 
-    componentDidUpdate(prevProps: Props) {
-        if (prevProps !== this.props) {
-            const { selectedIndex } = this.props;
-            this.setState({ selectedIndex: selectedIndex });
-        };
+    onItemClick = (path) => {
+        this.setState({ activePath: path });
     };
 
     render() {
+        const { items, activePath } = this.state;
         return (
-            <Container>{
-                this.props.tabs.map((item, index) => {
-                    return (<TextComponent color={this.props.color} text={item} type={'header'} size={'large'} bold={this.props.selectedIndex === index} onClick={() => this.props.onClick} />)
-                })
-            }</Container>
+            <StyledSideNav>
+                {
+                    items.map((item) => {
+                        return (
+                            <NavItem path={item.path} name={item.name} css={item.css} onItemClick={this.onItemClick} active={item.path === activePath} key={item.key} />
+                        )
+                    })
+                }
+            </StyledSideNav>
+        );
+    }
+};
+
+class Header extends React.Component {
+    render() {
+        return (
+            <SideNav></SideNav>
         );
     };
 };

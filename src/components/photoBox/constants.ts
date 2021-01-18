@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export interface Props {
+    className?: any;
     type: string;
     image1: any;
     image2: any;
@@ -12,6 +13,7 @@ export interface Props {
 
 interface StoryProps {
     type?: string;
+    className?: any;
     xOffset?: number;
     yOffset?: number;
 };
@@ -46,6 +48,7 @@ export const ColorBox = styled.img<StoryProps>`
 
 export const StyledImage = styled.img<StoryProps>`
     position: absolute;
+    transition: top left 1s ease-in-out; 
     top: ${({ xOffset }) => {
         return `${xOffset}px`;
     }};

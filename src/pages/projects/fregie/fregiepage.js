@@ -7,6 +7,7 @@ import Logo from '../../../images/fregie/fregielogo.png';
 import Characters from '../../../images/fregie/fregiecharacters.png';
 import FregieSocialMedia from '../../../images/fregie/fregiesocialmedia.png';
 import FregieGradient from '../../../images/fregie/fregiegradient.png';
+import Arrow from '../../../assets/svgComponents/arrowComponent';
 
 class FregiePage extends React.Component {
     render() {
@@ -18,6 +19,9 @@ class FregiePage extends React.Component {
                         <SectionContainer>
                             <Section title={TITLES.SUMMARY} description={DESC.SUMMARY} />
                             <Section title={TITLES.PROTOTYPE} description={DESC.PROTOTYPE} />
+                            <a href={'https://www.figma.com/proto/MSW7SbJdVnSSDJzN7kTiZw/client-ui-mockup?node-id=17%3A6&scaling=contain'} target='_blank' rel="noreferrer">
+                                <Arrow />
+                            </a>
                         </SectionContainer>
                         <ImageContainer>
                             <StyledImage src={Logo} alt={Logo} height={66} />

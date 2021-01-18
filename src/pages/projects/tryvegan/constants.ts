@@ -1,6 +1,3 @@
-import styled from 'styled-components';
-import { TextSection } from '../../../components';
-
 export const DESC = {
     SUMMARY: 'Try Vegan was a social campaign that stretched across multiple medias in effort to encourage people to try and explore the benefits of a plant-based diet. To appeal to people who may not normally search for meat and dairy alternatives, I chose to center the campaign around beautiful photos of food that would draw attention to the ingredients. Working from 2D to 4D, I designed posters, billboards, recipe cards, grocery tote bags, and a mobile application to promote the campaign.',
     PROCESS: 'When choosing a campaign, I wanted to have a personal connection with my subject matter. My entire process was documented in a process book that you can find at the end of this page.',

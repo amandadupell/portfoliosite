@@ -6,6 +6,7 @@ import Home from "./pages/home/home";
 import TryVeganPage from "./pages/projects/tryvegan/tryveganpage";
 import Header from "./components/header/sidebar";
 import ScrollToTop from "./assets/scrollToTop";
+import GrindPage from "./pages/projects/grind/grindpage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route exact path="/about" component={About} />
         <Route exact path="/projects" component={Projects} />
         <Route exact path="/projects/tryvegan" component={TryVeganPage} />
+        <Route exact path="/projects/thegrind" component={GrindPage} />
       </Switch>
       <Footer />
     </Router>

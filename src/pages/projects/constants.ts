@@ -22,14 +22,38 @@ export const TryVTile = styled(Tile)`
     padding-left: 300px;
 `;
 
-export const SectionContainer = styled.div`
+export const SpaceContainer = styled.div`
+    display: flex;
+    flex-direction: row;
     margin: 25%;
+    justify-content: space-around;
+    align-items: space-around;
+`;
+
+export const SectionContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+`;
+
+export const ImageContainer = styled(SectionContainer)`
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    padding-left: 10%;
+`;
+
+export const StyledImage = styled.img`
+    margin-bottom: 25px;
+    transition: transform .2s ease-in-out;
+
+    &: hover {
+        transform: scale(3, 3);
+    }
 `;
 
 export const Section = styled(TextSection)`
-    padding-top: 100px;
+    margin-bottom: 100px;
 `;
-
 
 export const Title = styled(TextComponent)`
     top: 0;

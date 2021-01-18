@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import { Container, Props } from './constants';
-import { LinkedInLogo, GithubLogo } from '../../assets/svgComponents';
+import LinkedInLogo from '../../assets/svgComponents/linkedInComponent';
+import GithubLogo from '../../assets/svgComponents/githubComponent';
 
 const Footer: FunctionComponent<Props> = () => {
     return (

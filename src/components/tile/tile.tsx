@@ -2,7 +2,7 @@ import React, { FunctionComponent } from 'react';
 import { Props, Container, TextContainer, Title, Description, Skills, DescriptionContainer, ArrowContainer } from './constants';
 import PhotoBox from '../photoBox';
 import { TYPE } from '../photoBox/constants';
-import { Arrow } from '../../assets/svgComponents';
+import Arrow from '../../assets/svgComponents/arrowComponent';
 
 const Tile: FunctionComponent<Props> = ({
     className,

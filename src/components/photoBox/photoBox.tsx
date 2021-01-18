@@ -13,7 +13,7 @@ const PhotoBox: FunctionComponent<Props> = ({
 }) => {
     return (
         <Container className={className}>
-            <ColorBox src={image2} type={type} />
+            <ColorBox src={image2} type={type} yOffset={yOffset} />
             <StyledImage height={imgH} width={imgW} src={image1} type={type} xOffset={xOffset} yOffset={yOffset} />
         </Container>
     );

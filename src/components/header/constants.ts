@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { TextComponent } from '..';
 
 export interface Props {
   tabs: string[];
@@ -19,11 +20,19 @@ export const StyledSideNav = styled.div`
 
 export const StyledNavItem = styled.div`
   text-align: left; 
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   a {
     text-decoration: none;
     &:hover {
       opacity: 0.5;
     }  
   }
+`;
+
+export const SubMenu = styled.div`
+  padding-top: 10px;
+`;
+
+export const SubItem = styled(TextComponent)`
+  padding-left: 25px;
 `;

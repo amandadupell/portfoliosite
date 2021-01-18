@@ -35,7 +35,9 @@ export const TextContainer = styled.div<StoryProps>`
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding-top: ${({ xOffset }) => xOffset}px;
+    padding-top: ${({ variant, xOffset }) => {
+        return variant === TYPE.ABOUT ? xOffset : null;
+    }}px;
     width: ${({ variant }) => {
         return variant === TYPE.ABOUT ? 30 : variant === TYPE.PROJECT ? 24 : null;
     }}%;

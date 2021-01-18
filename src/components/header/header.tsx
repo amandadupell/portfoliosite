@@ -2,7 +2,7 @@ import React from 'react';
 import { StyledSideNav } from './constants';
 import NavItem from './navItem';
 
-class SideNav extends React.Component<{}, { activePath: string, items: any[] }> {
+class SideNav extends React.Component<{}, { activePath: string, items: any[], subNav: boolean }> {
     constructor(props) {
         super(props);
         this.state = {
@@ -11,7 +11,7 @@ class SideNav extends React.Component<{}, { activePath: string, items: any[] }> 
                 {
                     path: '/',
                     name: 'home',
-                    key: 1
+                    key: 1,
                 },
                 {
                     path: '/about',
@@ -21,24 +21,46 @@ class SideNav extends React.Component<{}, { activePath: string, items: any[] }> 
                 {
                     path: '/projects',
                     name: 'projects',
+                    subNav: [
+                        {
+                            title: 'aneue',
+                            path: '/projects/aneue'
+                        },
+                        {
+                            title: 'fregie',
+                            path: '/projects/fregie'
+                        },
+                        {
+                            title: 'grind',
+                            path: '/projects/grind'
+                        },
+                        {
+                            title: 'try vegan',
+                            path: '/projects/grind'
+                        },
+                    ],
                     key: 3
                 },
-            ]
+            ],
+            subNav: true,
         };
     };
 
+
     onItemClick = (path) => {
         this.setState({ activePath: path });
+        this.setState({ subNav: !this.state.subNav });
     };
 
     render() {
+
         const { items, activePath } = this.state;
         return (
             <StyledSideNav>
                 {
                     items.map((item) => {
                         return (
-                            <NavItem path={item.path} name={item.name} css={item.css} onItemClick={this.onItemClick} active={item.path === activePath} key={item.key} />
+                            <NavItem path={item.path} name={item.name} css={item.css} onItemClick={this.onItemClick} active={item.path === activePath} key={item.key} subNav={item.subNav} />
                         )
                     })
                 }

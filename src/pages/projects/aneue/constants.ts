@@ -1,7 +1,6 @@
 export const DESC = {
-    SUMMARY: '',
-    PROCESS: '',
-    TYPOGRAPHY: '',
-    LANGUAGE: '',
-    COLOR: '',
+    SUMMARY: 'We are an emerging fragrance company with purpose. Aneue was founded on the idea that change starts with action.\n Of course, change can be uncomfortable and difficult. aneue was built with this in mind too, with hopes of encouraging people to question their routine while remaining grounded.\n Aneue is fresh, supportive, and all about feeling and smelling great.',
+    BRAND: 'Growing up, it was easy to align with what our parents believed in. their opinions, our environment’s teachings and our entire surroundings factor into our development as human beings. Our individuality comes from our innate questioning about what we want for ourselves. Aneue encourages this expression of individuality in hopes that people will become comfortable with who they are, how they feel and the way they exist in the world.\n We’re more than a perfume company. we want you to change the way you look at life.',
+    TYPOGRAPHY: 'Temeraire Italienne Italics was chosen as our logo font for its ebb and flow. For our app and complimentary text, we chose Open Sans, as it is easily readable on a large range of screens.',
+    COLOR: 'The color palette was chosen to be soft, neutral and comforting.  All of the tones compliment each other while also allowing for a high contrast between light and dark shades in the palette. \n Brown is a natural tone associated with strength and warmth. \n Pastel green is refreshing, cool and can help create a sense of relaxation. \n Soft blue signals an emotion of peacefulness, comfort and stability. \n Light pink causes feelings of hope, serenity and ease.\n The use of a feathery gradient is featured in almost all of our branding elements. Like a fog, the gradient gives a sense of air and life to the color palette.',
 }; 

@@ -30,7 +30,6 @@ export const Section = styled(TextSection)`
     padding-top: 100px;
 `;
 
-
 export const Title = styled(TextComponent)`
     top: 0;
     right: 0;

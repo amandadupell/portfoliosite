@@ -15,10 +15,10 @@ class Projects extends React.Component {
         return (
             <>
                 <PageContainer>
-                    <AneueTile variant={'project'} image1={Aneue} image2={AneueBox} imgH={315} imgW={300} xOffset={32} yOffset={42} title={'Aneue'} description={DESC.ANEUE} skills={SKILLS.ANEUE} />
-                    <FregieTile variant={'project'} image1={Fregie} image2={FregieBox} imgH={315} imgW={300} xOffset={40} yOffset={60} title={'Fregie'} description={DESC.FREGIE} skills={SKILLS.FREGIE} />
-                    <GrindTile variant={'project'} image1={Grind} image2={GrindBox} imgH={300} imgW={300} xOffset={32} yOffset={24} title={'The Grind'} description={DESC.GRIND} skills={SKILLS.GRIND} />
-                    <TryVTile variant={'project'} image1={TryV} image2={TryVBox} imgH={315} imgW={300} xOffset={50} yOffset={50} title={'Try Vegan'} description={DESC.TRYV} skills={SKILLS.TRYV} />
+                    <AneueTile variant={'project'} image1={Aneue} image2={AneueBox} imgH={265} imgW={250} xOffset={40} yOffset={75} title={'Aneue'} description={DESC.ANEUE} skills={SKILLS.ANEUE} />
+                    <FregieTile variant={'project'} image1={Fregie} image2={FregieBox} imgH={265} imgW={250} xOffset={40} yOffset={75} title={'Fregie'} description={DESC.FREGIE} skills={SKILLS.FREGIE} />
+                    <GrindTile variant={'project'} image1={Grind} image2={GrindBox} imgH={250} imgW={250} xOffset={32} yOffset={-50} title={'The Grind'} description={DESC.GRIND} skills={SKILLS.GRIND} />
+                    <TryVTile variant={'project'} image1={TryV} image2={TryVBox} imgH={265} imgW={250} xOffset={40} yOffset={75} title={'Try Vegan'} description={DESC.TRYV} skills={SKILLS.TRYV} />
                 </PageContainer>
             </>
         );

@@ -23,11 +23,10 @@ export const DropdownLink = styled(Link)`
 `;
 
 export const SubItem = styled(TextComponent)`
-    padding-left: 125px;
+    margin-left: 25px;
 `;
 
 export const MainItem = styled(TextComponent)`
-    padding-left: 100px;
 `;
 
 export const SidebarNav = styled.nav`
@@ -37,4 +36,5 @@ export const SidebarNav = styled.nav`
     position: fixed;
     text-align: left;
     top: 100px;
+    left: 100px;
 `;

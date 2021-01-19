@@ -1,25 +1,21 @@
 import styled from 'styled-components';
 import { Tile, TextComponent, TextSection } from '../../components';
 
-export const AneueTile = styled(Tile)`
+export const GenericTile = styled(Tile)`
     padding-top: 100px;
-    padding-right: 200px;
 `;
 
-export const FregieTile = styled(Tile)`
-    padding-top: 140px;
-    padding-left: 300px;
+export const AneueTile = styled(GenericTile)`
 `;
 
-export const GrindTile = styled(Tile)`
-    padding-top: 125px;
-    padding-right: 200px;
+export const FregieTile = styled(GenericTile)`
 `;
 
-export const TryVTile = styled(Tile)`
-    padding-top: 140px;
+export const GrindTile = styled(GenericTile)`
+`;
+
+export const TryVTile = styled(GenericTile)`
     padding-bottom: 200px;
-    padding-left: 300px;
 `;
 
 export const SpaceContainer = styled.div`

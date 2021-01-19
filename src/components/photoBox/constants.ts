@@ -31,7 +31,7 @@ export const Container = styled.div`
 function getSize(type: string | undefined) {
     switch (type) {
         case TYPE.ABOUT:
-            return 'height: 500px; width: 500px;'
+            return 'height: 400px; width: 400px;'
         case TYPE.PROJECT:
             return 'height: 300px; width: 300px;'
         default:
@@ -63,16 +63,7 @@ export const StyledImage = styled.img<StoryProps>`
             transform: translateY(${({ yOffset }) => { return `${yOffset}px`; }});
         };
         to {
-            transform: translateY(${({ yOffset }) => { return `${yOffset - 50}px`; }});
-        };
-    };
-    
-    @-webkit-@keyframes move {
-        from {
-            transform: translateY(${({ yOffset }) => { return `${yOffset}px`; }});
-        };
-        to {
-            transform: translateY(${({ yOffset }) => { return `${yOffset - 50}px`; }});
+            transform: translateY(-${({ yOffset }) => { return `${yOffset}px`; }});
         };
     };
 `;

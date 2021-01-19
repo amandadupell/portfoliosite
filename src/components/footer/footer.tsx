@@ -7,10 +7,10 @@ const Footer: FunctionComponent<Props> = () => {
     return (
         <Container>
             <a href={'https://www.linkedin.com/in/amanda-dupell-profile/'} target='_blank' rel="noreferrer">
-                <LinkedInLogo width={40} height={40} />
+                <LinkedInLogo width={20} height={20} />
             </a>
             <a href={'https://github.com/amandadupell'} target='_blank' rel="noreferrer">
-                <GithubLogo width={40} height={40} />
+                <GithubLogo width={20} height={20} />
             </a>
         </Container >
     );

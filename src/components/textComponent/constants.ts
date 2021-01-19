@@ -38,18 +38,18 @@ export const StyledText = styled.div<StoryProps>`
         result = bold ? `600` : ``;
         switch (size) {
             case SIZE.SMALL:
-                result = (type === TYPE.TITLE) ? `${result} 36px/38px` : (type === TYPE.BODY) ? `${result} 12px/22px` : '';
+                result = (type === TYPE.TITLE) ? `${result} 34px/38px` : (type === TYPE.BODY) ? `${result} 10px/22px` : '';
                 break;
             case SIZE.MEDIUM:
-                result = (type === TYPE.BODY) ? `${result} 14px/22px` : '';
+                result = (type === TYPE.BODY) ? `${result} 12px/22px` : '';
                 break;
             case SIZE.LARGE:
                 result = (type === TYPE.TITLE) ?
-                    `${result} 48px/50px` :
+                    `${result} 46px/50px` :
                     (TYPE.BODY) ?
-                        `${result} 16px/24px` :
+                        `${result} 14px/24px` :
                         (TYPE.HEADER) ?
-                            `${result} 26px/28px` : '';
+                            `${result} 24px/28px` : '';
                 break;
             default:
                 break;

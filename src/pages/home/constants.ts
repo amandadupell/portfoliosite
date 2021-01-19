@@ -4,20 +4,19 @@ import Howdy from '../../assets/svgComponents/howdy';
 import Cowboy from '../../assets/svgComponents/cowboy';
 
 export const Container = styled.div`
-    height: 100%;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    width: 100vw;
+    height: 100vh;
 `;
 
 export const StyledSmile = styled(Smile)`
-    position: relative;
+    position: fixed;
 `;
 
 export const StyledHowdy = styled(Howdy)`
-    position: absolute;
+    position: fixed;
     animation: rotation 15s infinite linear;
 
     @keyframes rotation {

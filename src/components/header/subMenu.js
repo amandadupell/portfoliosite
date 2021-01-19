@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { SidebarLink, MainItem, DropdownLink, SubItem } from './constants';
+import { $orange } from '../../assets/colors';
 
 
 const SubMenu = ({ item }) => {
@@ -11,9 +12,7 @@ const SubMenu = ({ item }) => {
     return (
         <>
             <SidebarLink to={item.path} onClick={item.subNav && showSubnav}>
-                <div>
-                    <MainItem text={item.title} type={'header'} size={'large'} />
-                </div>
+                <MainItem text={item.title} type={'header'} size={'large'} />
             </SidebarLink>
             {subnav &&
                 item.subNav.map((item, index) => {

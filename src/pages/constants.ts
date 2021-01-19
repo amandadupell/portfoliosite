@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const PageContainer = styled.body`
+export const PageContainer = styled.div`
     animation: fadeInAnimation ease-in-out 1s;
 
     @keyframes fadeInAnimation { 

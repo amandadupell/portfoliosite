@@ -12,11 +12,11 @@ export const Container = styled.div`
 `;
 
 export const StyledSmile = styled(Smile)`
-    position: relative;
+    position: fixed;
 `;
 
 export const StyledHowdy = styled(Howdy)`
-    position: absolute;
+    position: fixed;
     animation: rotation 15s infinite linear;
 
     @keyframes rotation {

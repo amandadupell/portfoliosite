@@ -39,7 +39,7 @@ export const TextContainer = styled.div<StoryProps>`
         return variant === TYPE.ABOUT ? xOffset : null;
     }}px;
     width: ${({ variant }) => {
-        return variant === TYPE.ABOUT ? 30 : variant === TYPE.PROJECT ? 24 : null;
+        return variant === TYPE.ABOUT ? 100 : variant === TYPE.PROJECT ? 24 : null;
     }}%;
     padding-left: ${({ variant }) => {
         return variant === TYPE.ABOUT ? 100 : variant === TYPE.PROJECT ? 80 : null;

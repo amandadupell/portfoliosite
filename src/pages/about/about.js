@@ -11,7 +11,7 @@ class About extends React.Component {
             <>
                 <PageContainer>
                     <Frank type={'body'} size={'medium'} text={'ask me about frank :)'} color={$orange} />
-                    <AboutTile variant={'about'} image1={Me} image2={Orange} imgH={400} imgW={400} xOffset={50} yOffset={50} title={'Hi, there!'} description={DESC} />
+                    <AboutTile variant={'about'} image1={Me} image2={Orange} imgH={400} imgW={400} xOffset={50} yOffset={-50} title={'Hi, there!'} description={DESC} />
                 </PageContainer>
             </>
         );

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { SidebarLink, MainItem, DropdownLink, SubItem } from './constants';
-import { $orange } from '../../assets/colors';
 
 
 const SubMenu = ({ item }) => {

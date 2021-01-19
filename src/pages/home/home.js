@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, StyledHowdy, StyledSmile, StyledCowboy } from './constants';
+import { Container, StyledHowdy, StyledSmile } from './constants';
 import { PageContainer } from '../constants';
 
 class Home extends React.Component {

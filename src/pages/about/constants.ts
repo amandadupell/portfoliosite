@@ -3,10 +3,12 @@ import { Tile } from '../../components';
 import { TextComponent } from '../../components';
 
 export const AboutTile = styled(Tile)`
-    margin: 15em;
+    padding-top: 5em;
+    width: 60%;
 `;
 
 export const Frank = styled(TextComponent)`
+    left: 0;    
     bottom: 0;
     position: fixed;
 `;

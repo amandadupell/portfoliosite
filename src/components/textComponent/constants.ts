@@ -54,7 +54,7 @@ export const StyledText = styled.div<StoryProps>`
             default:
                 break;
         };
-        return `${result} Roboto`;
+        return `${result} Roboto, sans-serif !important`;
     }};
     color: ${({ color }) => {
         return color ? color : $black;

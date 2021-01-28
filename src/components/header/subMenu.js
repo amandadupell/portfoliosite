@@ -6,7 +6,9 @@ const SubMenu = ({ item }) => {
     const [subnav, setSubnav] = useState(false);
 
     const showSubnav = () => setSubnav(!subnav);
-    console.log(subnav)
+    console.log(item.path)
+    console.log(item.title)
+    console.log(item.subNav)
 
     return (
         <>

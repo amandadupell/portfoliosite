@@ -8,10 +8,11 @@ const TextComponent: FunctionComponent<Props> = ({
     size,
     color,
     bold,
+    active,
     onClick
 }) => {
     return (
-        <StyledText className={className} type={type} size={size} color={color} bold={bold} onClick={onClick}>{text}</StyledText>
+        <StyledText active={active} className={className} type={type} size={size} color={color} bold={bold} onClick={onClick}>{text}</StyledText>
     );
 };
 

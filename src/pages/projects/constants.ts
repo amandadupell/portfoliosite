@@ -68,7 +68,7 @@ export const DESC = {
 
 export const SKILLS = {
     ANEUE: 'Branding | Adobe Dimension | Product Design | App Design',
-    FREGIE: 'Adobe InDesign | Adobe Illustrator | Social Media',
+    FREGIE: 'Branding | UX/UI Design | App Design',
     GRIND: 'Adobe InDesign | Adobe Illustrator | Social Media',
     TRYV: 'Adobe InDesign | Adobe Illustrator | App Design | Graphic Design',
 };

@@ -4,7 +4,7 @@ import Projects from './pages/projects/projects';
 import About from './pages/about/about';
 import Home from './pages/home/home';
 import TryVeganPage from './pages/projects/tryvegan/tryveganpage';
-import Header from './components/header/sidebar';
+import Header from './components/header/header';
 import ScrollToTop from './assets/scrollToTop';
 import GrindPage from './pages/projects/grind/grindpage';
 import AneuePage from './pages/projects/aneue/aneuepage';

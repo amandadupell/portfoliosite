@@ -11,6 +11,9 @@ export const SidebarLink = styled(Link)`
     &:hover {
         cursor: pointer;
     };
+    &:active {
+        color: ${$orange};
+    };
 `;
 
 export const DropdownLink = styled(Link)`
@@ -22,11 +25,14 @@ export const DropdownLink = styled(Link)`
     };
 `;
 
-export const SubItem = styled(TextComponent)`
-    margin-left: 25px;
+export const MainItem = styled(TextComponent)`
+    &:active {
+        color: ${$orange};
+    }
 `;
 
-export const MainItem = styled(TextComponent)`
+export const SubItem = styled(MainItem)`
+    margin-left: 25px;
 `;
 
 export const SidebarNav = styled.nav`
@@ -37,4 +43,5 @@ export const SidebarNav = styled.nav`
     text-align: left;
     top: 100px;
     left: 100px;
+
 `;

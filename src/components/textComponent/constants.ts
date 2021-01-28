@@ -21,6 +21,7 @@ export interface Props {
     color?: string;
     bold?: boolean;
     onClick?: void;
+    active?: boolean;
 };
 
 interface StoryProps {
@@ -56,8 +57,8 @@ export const StyledText = styled.div<StoryProps>`
         };
         return `${result} Roboto, sans-serif !important`;
     }};
-    color: ${({ color }) => {
-        return color ? color : $black;
+    color: ${({ color, active }) => {
+        return color ? color : active ? $orange : $black;
     }};
     ${({ onClick }) => {
         return onClick ? `&:hover { color: ${$orange}; cursor: pointer; }` : '';

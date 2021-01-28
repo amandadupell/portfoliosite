@@ -31,7 +31,7 @@ export const Container = styled.div`
 function getSize(type: string | undefined) {
     switch (type) {
         case TYPE.ABOUT:
-            return 'height: 400px; width: 400px;'
+            return 'height: 250px; width: 250px;'
         case TYPE.PROJECT:
             return 'height: 300px; width: 300px;'
         default:

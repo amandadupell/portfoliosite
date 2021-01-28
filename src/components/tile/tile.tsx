@@ -29,7 +29,7 @@ const Tile: FunctionComponent<Props> = ({
                     variant === TYPE.PROJECT ?
                         <>
                             <Skills text={skills} type={'body'} size={'small'} />
-                            <ArrowContainer to={`projects/${title.replace(/\s+/g, '').toLocaleLowerCase()}`}>
+                            <ArrowContainer height={13} width={195} to={`projects/${title.replace(/\s+/g, '').toLocaleLowerCase()}`}>
                                 <Arrow />
                             </ArrowContainer>
                         </>

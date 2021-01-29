@@ -5,7 +5,7 @@ interface Props {
     width?: number;
 };
 
-class HomeText extends React.Component<Props> {
+class HomeFlower extends React.Component<Props> {
     render() {
         return (
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" {...this.props}>
@@ -40,4 +40,4 @@ class HomeText extends React.Component<Props> {
     }
 };
 
-export default HomeText;
+export default HomeFlower;

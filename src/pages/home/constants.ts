@@ -1,7 +1,6 @@
 import styled from 'styled-components';
-import Smile from '../../assets/svgComponents/smile';
-import Howdy from '../../assets/svgComponents/howdy';
-import Cowboy from '../../assets/svgComponents/cowboy';
+import HomeFlower from '../../assets/svgComponents/homeFlower';
+import HomeText from '../../assets/svgComponents/homeText';
 
 export const Container = styled.div`
     display: flex;
@@ -11,11 +10,11 @@ export const Container = styled.div`
     height: 100vh;
 `;
 
-export const StyledSmile = styled(Smile)`
+export const StyledSmile = styled(HomeFlower)`
     position: fixed;
 `;
 
-export const StyledHowdy = styled(Howdy)`
+export const StyledHowdy = styled(HomeText)`
     position: fixed;
     animation: rotation 15s infinite linear;
 
@@ -34,29 +33,6 @@ export const StyledHowdy = styled(Howdy)`
         };
         to {
             transform: rotate(-359deg);
-        };
-    };
-`;
-
-export const StyledCowboy = styled(Cowboy)`
-    position: fixed;
-    bottom: 0;
-    animation: floatText 25s infinite alternate linear;
-    @keyframes floatText {
-        from {
-            left: 0%;
-        };
-        to {
-            left: 100%;
-        };
-    };
-
-    @-webkit-keyframes floatText{
-        from {
-            left: 0%;
-        };
-        to {
-            left: 100%;
         };
     };
 `;

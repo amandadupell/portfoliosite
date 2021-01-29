@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import HomeFlower from '../../assets/svgComponents/homeFlower';
 import HomeText from '../../assets/svgComponents/homeText';
+import HomeHand from '../../assets/svgComponents/homeHand';
 
 export const Container = styled.div`
     display: flex;
@@ -11,6 +12,10 @@ export const Container = styled.div`
 `;
 
 export const StyledSmile = styled(HomeFlower)`
+    position: fixed;
+`;
+
+export const StyledHand = styled(HomeHand)`
     position: fixed;
 `;
 

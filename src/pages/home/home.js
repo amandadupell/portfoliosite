@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, StyledHowdy, StyledSmile } from './constants';
+import { Container, StyledHowdy, StyledSmile, StyledHand } from './constants';
 import { PageContainer } from '../constants';
 
 class Home extends React.Component {
@@ -8,7 +8,8 @@ class Home extends React.Component {
             <>
                 <PageContainer>
                     <Container>
-                        <StyledSmile height={500} width={500} />
+                        <StyledHand height={400} width={400} />
+                        <StyledSmile height={350} width={350} />
                         <StyledHowdy height={600} width={600} />
                     </Container>
                 </PageContainer>

@@ -9,7 +9,7 @@ class Home extends React.Component {
                 <PageContainer>
                     <Container>
                         <StyledSmile height={500} width={500} />
-                        <StyledHowdy height={500} width={500} />
+                        <StyledHowdy height={600} width={600} />
                     </Container>
                 </PageContainer>
             </>

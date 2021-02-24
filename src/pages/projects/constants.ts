@@ -24,6 +24,10 @@ export const SpaceContainer = styled.div`
     margin: 25%;
     justify-content: space-around;
     align-items: space-around;
+
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+    }
 `;
 
 export const SectionContainer = styled.div`
@@ -40,10 +44,13 @@ export const ImageContainer = styled(SectionContainer)`
 
 export const StyledImage = styled.img`
     margin-bottom: 25px;
-    transition: transform .2s ease-in-out;
+    
+    @media screen and (min-width: 800px) {
+        transition: transform .2s ease-in-out;
 
-    &: hover {
-        transform: scale(3, 3);
+        &: hover {
+            transform: scale(3, 3);
+        }
     }
 `;
 
@@ -57,6 +64,11 @@ export const Title = styled(TextComponent)`
     margin-right: 100px;
     margin-top: 100px;
     position: fixed;
+
+    @media screen and (max-width: 800px) {
+        margin-right: 15px;
+        margin-top: 15px;
+    }
 `;
 
 export const DESC = {

@@ -26,6 +26,9 @@ export const TYPE = {
 export const Container = styled.div`
     display: flex;
     position: relative;
+
+    justify-content: center;
+    align-items: center;
 `;
 
 function getSize(type: string | undefined) {
@@ -44,6 +47,10 @@ export const ColorBox = styled.img<StoryProps>`
     ${({ type }) => {
         return getSize(type);
     }};
+
+    @media screen and (max-width: 800px) {
+        display: none;
+    }
 `;
 
 export const StyledImage = styled.img<StoryProps>`
@@ -66,4 +73,8 @@ export const StyledImage = styled.img<StoryProps>`
             transform: translateY(-${({ yOffset }) => { return `${yOffset}px`; }});
         };
     };
+
+    @media screen and (max-width: 800px) {
+        display: none;
+    }
 `;

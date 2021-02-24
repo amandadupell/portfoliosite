@@ -29,6 +29,10 @@ export const Container = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+    }
 `;
 
 export const TextContainer = styled.div<StoryProps>`
@@ -44,12 +48,24 @@ export const TextContainer = styled.div<StoryProps>`
     padding-left: ${({ variant }) => {
         return variant === TYPE.ABOUT ? 100 : variant === TYPE.PROJECT ? 80 : null;
     }}px;
+
+    @media screen and (max-width: 800px) {
+        ${({ variant }) => {
+        return variant === TYPE.ABOUT ? 'width: 100%;' : variant === TYPE.PROJECT ? 'width: 80%; margin-right: 15px;' : null
+    }};
+    }
 `;
 
 export const Title = styled(TextComponent)`
-    padding-bottom: ${(props: { variant: string }) => {
+    padding-bottom: ${
+    (props: { variant: string }) => {
         return props.variant === TYPE.ABOUT ? 50 : props.variant === TYPE.PROJECT ? 15 : null;
-    }}px;
+    }
+    }px;
+
+    @media screen and(max-width: 800px) {
+        padding-top: 10px;
+    }
 `;
 
 export const DescriptionContainer = styled.div`

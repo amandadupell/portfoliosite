@@ -23,6 +23,10 @@ export const DropdownLink = styled(Link)`
         cursor: pointer;
         border-left: 4px solid ${$orange};
     };
+
+    @media screen and (max-width: 800px) {
+        display: none;
+    }
 `;
 
 export const MainItem = styled(TextComponent)`
@@ -33,6 +37,8 @@ export const MainItem = styled(TextComponent)`
 
 export const SubItem = styled(MainItem)`
     margin-left: 25px;
+    @media screen and (max-width: 800px) {
+        margin-left: 5px;
 `;
 
 export const SidebarNav = styled.nav`
@@ -44,4 +50,8 @@ export const SidebarNav = styled.nav`
     top: 100px;
     left: 100px;
 
+    @media screen and (max-width: 800px) {
+        top: 15px;
+        left: 15px;
+    }
 `;

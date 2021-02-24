@@ -17,6 +17,10 @@ export const StyledSmile = styled(HomeFlower)`
 
 export const StyledHand = styled(HomeHand)`
     position: fixed;
+    
+    @media screen and (max-width: 800px) {
+        display: none;
+    }
 `;
 
 export const StyledHowdy = styled(HomeText)`
@@ -40,4 +44,8 @@ export const StyledHowdy = styled(HomeText)`
             transform: rotate(-359deg);
         };
     };
+
+    @media screen and (max-width: 800px) {
+        display: none;
+    }
 `;

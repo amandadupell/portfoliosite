@@ -44,10 +44,13 @@ export const ImageContainer = styled(SectionContainer)`
 
 export const StyledImage = styled.img`
     margin-bottom: 25px;
-    transition: transform .2s ease-in-out;
+    
+    @media screen and (min-width: 800px) {
+        transition: transform .2s ease-in-out;
 
-    &: hover {
-        transform: scale(3, 3);
+        &: hover {
+            transform: scale(3, 3);
+        }
     }
 `;
 

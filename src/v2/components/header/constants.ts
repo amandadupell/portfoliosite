@@ -3,6 +3,19 @@ import TextComponent from '../textComponent';
 import { Link } from 'react-router-dom';
 import { $orange, $white } from '../../../assets/colors';
 
+export const Container = styled.div`
+    display: flex;
+    position: fixed;
+    top: 100px;
+    left: 100px;
+    z-index: 9999;
+
+    @media screen and (max-width: 800px) {
+        top: 15px;
+        left: 15px;
+    }
+`;
+
 export const SidebarLink = styled(Link)`
     display: flex;
     text-decoration: none;
@@ -41,14 +54,9 @@ export const SubItem = styled(MainItem)`
 export const SidebarNav = styled.nav`
     display: flex;
     flex-direction: column;
-    position: fixed;
     text-align: left;
-    top: 100px;
-    left: 100px;
 
     @media screen and (max-width: 800px) {
-        top: 15px;
-        left: 15px;
         padding: 5px;
         background-color: ${$white}CC;
     }

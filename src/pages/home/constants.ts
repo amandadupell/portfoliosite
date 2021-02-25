@@ -46,6 +46,7 @@ export const StyledHowdy = styled(HomeText)`
     };
 
     @media screen and (max-width: 800px) {
-        display: none;
+        height: 50%;
+        width: 50%;
     }
 `;

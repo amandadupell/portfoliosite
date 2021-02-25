@@ -26,6 +26,8 @@ export const SpaceContainer = styled.div`
     align-items: space-around;
 
     @media screen and (max-width: 800px) {
+        padding-top: 125px;
+        margin: 15px;
         flex-direction: column;
     }
 `;
@@ -40,6 +42,11 @@ export const ImageContainer = styled(SectionContainer)`
     align-items: center;
     width: 200px;
     padding-left: 10%;
+
+    @media screen and (max-width: 800px) {
+        padding: 0;
+        width: 100%;
+    }
 `;
 
 export const StyledImage = styled.img`

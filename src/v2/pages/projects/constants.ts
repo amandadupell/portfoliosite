@@ -13,6 +13,17 @@ export const Container = styled.div`
         padding-top: 125px;
         padding-bottom: 100px;
     }
+
+    animation: fadeInAnimation ease-in-out 1s;
+
+    @keyframes fadeInAnimation { 
+        0% { 
+            opacity: 0; 
+        };
+        100% { 
+            opacity: 1; 
+        };
+    };
 `;
 
 export const GenericTile = styled(TileBlock)`

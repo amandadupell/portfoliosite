@@ -51,10 +51,10 @@ export const TopImage = styled(BottomImage)`
 
     @keyframes move {
         from {
-            transform: translateY(0);
+            transform: translateY(-100px);
         };
         to {
-            transform: translateY(30);
+            transform: translateY(0px);
         };
     };
 `;

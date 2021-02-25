@@ -1,11 +1,10 @@
 import styled from 'styled-components';
-import { TextComponent } from '..';
+import TextComponent from '../textComponent';
 import { Link } from 'react-router-dom';
-import { $orange } from '../../assets/colors';
+import { $orange, $white } from '../../../assets/colors';
 
 export const SidebarLink = styled(Link)`
     display: flex;
-    margin-bottom: 10px;
     text-decoration: none;
     
     &:hover {
@@ -37,13 +36,9 @@ export const MainItem = styled(TextComponent)`
 
 export const SubItem = styled(MainItem)`
     margin-left: 25px;
-    @media screen and (max-width: 800px) {
-        margin-left: 5px;
-    }
 `;
 
 export const SidebarNav = styled.nav`
-    height: 100vh;
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -54,5 +49,7 @@ export const SidebarNav = styled.nav`
     @media screen and (max-width: 800px) {
         top: 15px;
         left: 15px;
+        padding: 5px;
+        background-color: ${$white}CC;
     }
 `;

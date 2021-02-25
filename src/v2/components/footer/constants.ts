@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-import LinkedInLogo from '../../assets/svgComponents/linkedInComponent';
-import GithubLogo from '../../assets/svgComponents/githubComponent';
+import LinkedInLogo from '../../../assets/svgComponents/linkedInComponent';
+import GithubLogo from '../../../assets/svgComponents/githubComponent';
 
 export interface Props {
 };

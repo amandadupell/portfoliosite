@@ -1,7 +1,6 @@
 import React from 'react';
 import { PageContainer } from '../constants';
-import { PagePadding } from './constants';
-import { Document } from 'react-pdf/dist/umd/entry.webpack';
+import { Document, Page } from 'react-pdf/dist/umd/entry.webpack';
 
 class Resume extends React.Component {
 
@@ -21,7 +20,7 @@ class Resume extends React.Component {
                         file="/RESUME2022.pdf"
                         onLoadSuccess={this.onDocumentLoadSuccess}
                     >
-                        <PagePadding pageNumber={pageNumber} />
+                        <Page pageNumber={pageNumber} />
                     </Document>
                 </PageContainer>
             </>

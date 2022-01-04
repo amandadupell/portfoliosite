@@ -32,5 +32,9 @@ export const SidebarData = [
                 cName: 'sub-nav'
             }
         ]
-    }
+    },
+    {
+        title: 'resume',
+        path: '/resume',
+    },
 ];

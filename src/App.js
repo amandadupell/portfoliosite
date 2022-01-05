@@ -9,7 +9,6 @@ import ScrollToTop from './assets/scrollToTop';
 import GrindPage from './pages/projects/grind/grindpage';
 import AneuePage from './pages/projects/aneue/aneuepage';
 import FregiePage from './pages/projects/fregie/fregiepage';
-import Resume from './pages/resume/resume';
 
 function App() {
   return (
@@ -24,7 +23,6 @@ function App() {
         <Route exact path="/projects/fregie" component={FregiePage} />
         <Route exact path="/projects/thegrind" component={GrindPage} />
         <Route exact path="/projects/tryvegan" component={TryVeganPage} />
-        <Route exact path="/resume" component={Resume} />
       </Switch>
       <Footer />
     </>

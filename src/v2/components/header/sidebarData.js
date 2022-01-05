@@ -33,8 +33,4 @@ export const SidebarData = [
             }
         ]
     },
-    {
-        title: 'resume',
-        path: '/resume',
-    },
 ];

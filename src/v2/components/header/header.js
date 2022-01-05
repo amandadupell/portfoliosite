@@ -10,7 +10,13 @@ const Header = () => {
                     {SidebarData.map((item, index) => {
                         return <SubMenu item={item} key={index} />;
                     })}
-                    <a style={{ 'text-decoration': 'none' }} href='/RESUME2022.pdf' target='_blank'>
+                    <a
+                        style={{ 'text-decoration': 'none' }}
+                        href='https://www.dropbox.com/s/qht5ne8wdr529lj/RESUME.pdf?dl=0'
+                        target='_blank'
+                        rel="noreferrer"
+                        aria-label='resume link'
+                    >
                         <MainItem text="resume" type={'header'} size={'large'} />
                     </a>
                 </SidebarNav>
